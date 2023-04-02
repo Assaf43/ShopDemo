@@ -33,7 +33,7 @@ export class ErrorInterceptor implements HttpInterceptor {
           }
 
           if (errorResponse.status === 401) {
-            this.router.navigateByUrl('/not-found');
+            //this.router.navigateByUrl('/not-found');
             this.toastr.error(
               errorResponse.error.message,
               errorResponse.status.toString()
